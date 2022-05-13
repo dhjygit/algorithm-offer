@@ -9,9 +9,7 @@ public class code_003_前n个数字二进制中1的个数 {
                 String str = Integer.toBinaryString(i);
                 System.out.println(str);
                 int count = 0;
-                for (int j = 0; j < str.length(); j++) {
-                    if (str.charAt(j) == '1') count++;
-                }
+                for (int j = 0; j < str.length(); j++) if (str.charAt(j) == '1') count++;
                 result[i] = count;
             }
             return result;
@@ -34,4 +32,3 @@ public class code_003_前n个数字二进制中1的个数 {
         }
     }
 }
-

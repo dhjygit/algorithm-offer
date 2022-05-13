@@ -2,7 +2,6 @@ public class code_002_二进制加法 {
     public static void main(String[] args) {
     }
 
-
     static class Solution {
         public String addBinary(String a, String b) {
             int length = Math.max(a.length(), b.length());

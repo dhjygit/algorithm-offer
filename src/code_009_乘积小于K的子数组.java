@@ -1,8 +1,6 @@
 public class code_009_乘积小于K的子数组 {
     public static void main(String[] args) {
-
     }
-
 
     static class Solution1 {
         public int numSubarrayProductLessThanK(int[] nums, int k) {
@@ -29,9 +27,7 @@ public class code_009_乘积小于K的子数组 {
             int value = 1;
             while (r < nums.length) {
                 value *= nums[r];
-                while (l <= r && value >= k) {
-                    value /= nums[l++];
-                }
+                while (l <= r && value >= k) value /= nums[l++];
                 ans += r - l + 1;
                 r++;
             }
