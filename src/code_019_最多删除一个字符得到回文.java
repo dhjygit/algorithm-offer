@@ -8,7 +8,7 @@ public class code_019_最多删除一个字符得到回文 {
             int l = 0;
             int r = s.length() - 1;
             while (l < r) {
-                if (s.charAt(l) ==  s.charAt(r)) {
+                if (s.charAt(l) == s.charAt(r)) {
                     l++;
                     r--;
                 } else {
