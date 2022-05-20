@@ -25,7 +25,3 @@ public class code_020_回文子字符串的个数 {
     }
 }
 
-class Solution {
-
-}
-
