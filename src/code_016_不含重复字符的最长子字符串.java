@@ -4,7 +4,7 @@ public class code_016_不含重复字符的最长子字符串 {
     public static void main(String[] args) {
     }
 
-    class Solution {
+    static class Solution {
         public int lengthOfLongestSubstring(String s) {
             int[] arr = new int[128];
             int max = 0;
