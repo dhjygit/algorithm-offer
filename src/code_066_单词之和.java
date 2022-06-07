@@ -46,14 +46,8 @@ public class code_066_单词之和 {
 }
 
 class MapSum {
-    class TrieNode {
-        int val = 0;
-        TrieNode[] next = new TrieNode[26];
-    }
-
     TrieNode root;
     Map<String, Integer> map;
-
     public MapSum() {
         root = new TrieNode();
         map = new HashMap<>();
@@ -77,5 +71,10 @@ class MapSum {
             node = node.next[c - 'a'];
         }
         return node.val;
+    }
+
+    class TrieNode {
+        int val = 0;
+        TrieNode[] next = new TrieNode[26];
     }
 }
